@@ -82,6 +82,7 @@ repos:
     - https://example.com/repo-1.asc
     - key2.asc
 ```
+It is generally better security practice to commit keys to your repository instead of having the dnf module download them at build-time. To do this, just place the key in files/dnf and reference it by file name like above.
 
 ### Add Non-free Repositories
 
